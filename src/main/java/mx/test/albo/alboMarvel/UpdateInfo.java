@@ -28,7 +28,7 @@ public class UpdateInfo {
 	String publicKey = "5fd1b78a26a921f1efc193efbe4a99cb";
     String privateKey = "d974763326ea7c02a19ecb4ad2a1571e7b682252";
     long timeStamp = System.currentTimeMillis();
-    int limit = 20;
+    int limit = 100;
     String stringToHash = timeStamp + privateKey + publicKey;
     String hash = DigestUtils.md5Hex(stringToHash);
     Date today = new Date();  
