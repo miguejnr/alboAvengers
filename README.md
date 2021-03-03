@@ -4,19 +4,19 @@ Se tomaron varias consideraciones al realizar este proyecto, se decidió utiliza
 
 El proyecto cuenta con 5 clases principales:
 
-**AlboMarvelApplication
+**AlboMarvelApplication**
 
 Cuenta con la clase main que ejecuta la aplicación de Spring.
 
-**MarvelController
+**MarvelController**
 
 Gestiona el mapeo de la url y toma como variable el nombre del personaje del que se deseen obtener los datos, ya sea de colLaborators o de characters.
 
-**GetCollaborators/GetCharacters
+**GetCollaborators/GetCharacters**
 
 Hacen un request a la base de datos y regresa los datos del personaje que fue mandado como parametro en la url. Si la última actualización de la base de datos no es la del día en curso se actualiza la información vía la clase UpdateInfo, si ya se encuentra actualizado únicamente muestra la información existente en la base de datos.
 
-**UpdateInfo
+**UpdateInfo**
 
 El backbone del backend, hace el HTTP request al API de Marvel y construye el string de JSON que sera actualizado en la base de datos y hace el correspondiente update en ella.
 
