@@ -8,6 +8,18 @@
 		<version>2.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	<repositories>
+		<repository>
+			<id>spring-releases</id>
+			<url>https://repo.spring.io/libs-release</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+    	<pluginRepository>
+        	<id>spring-releases</id>
+        	<url>https://repo.spring.io/libs-release</url>
+    	</pluginRepository>
+	</pluginRepositories>
 	<groupId>mx.test.albo</groupId>
 	<artifactId>alboMarvel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
